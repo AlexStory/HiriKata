@@ -1,0 +1,15 @@
+﻿body {
+    background: url(../images/bg.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.content{
+    background(rgba(255,255,255,.9))
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}

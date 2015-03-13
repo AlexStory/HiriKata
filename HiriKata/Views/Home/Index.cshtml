@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html ng-app="hirikata">
+    <head>
+        <title>HiriKata</title>
+        @Styles.Render("~/Content/css")
+    </head>
+    <body>
+        <div class="navbar navbar-default">
+            <div class="container container-fluid content">
+                <div class="navbar-header">
+                    <span class="navbar-brand">
+                        HiriKata
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container container-fluid">
+            <input ng-model="words" />
+            {{words}}
+
+        </div>
+    </body>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jqueryval")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/angular")
+</html>
+
