@@ -53,3 +53,5 @@ c:\users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\bin\M
 c:\users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Debug\HiriKata.csprojResolveAssemblyReference.cache
 c:\users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Debug\HiriKata.dll
 c:\users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Debug\HiriKata.pdb
+C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Debug\HiriKata.Migrations.InitialCreate.resources
+C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Debug\HiriKata.csproj.GenerateResource.Cache

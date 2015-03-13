@@ -30,7 +30,7 @@ namespace HiriKata
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                     "~/Scripts/angular.min.js",
                     "~/Scripts/angular-route.js",
-                    "~/Scripts/app/app.js"
+                    "~/Scripts/app/*.js"
                 ));
         }
     }
