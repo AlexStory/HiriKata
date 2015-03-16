@@ -1,10 +1,8 @@
 ﻿(function () {
-    angular.module('hirikata').controller('HomeCtrl', function ($http, $scope) {
-        var vm = this;
+    angular.module('hirikata').controller('HomeCtrl', function ($http, $scope, apiFactory) {
         $scope.things = {};
-        $http.get('../Api').success(function(data){
+        apiFactory.get('', function (data) {
             $scope.things = data;
-            console.log(data, 'success');
         })
     });
 })()

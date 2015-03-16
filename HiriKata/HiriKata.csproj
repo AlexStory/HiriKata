@@ -189,10 +189,13 @@
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\accountFactory.js" />
+    <Content Include="Scripts\app\apzFactory.js" />
+    <Content Include="Scripts\app\1app.js" />
     <Content Include="Scripts\app\config.js" />
     <Content Include="Scripts\app\HomeController.js" />
     <Content Include="Scripts\app\pages\home.html" />
+    <Content Include="Scripts\app\registerController.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
