@@ -55,3 +55,9 @@ c:\users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\D
 c:\users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Debug\HiriKata.pdb
 C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Debug\HiriKata.Migrations.InitialCreate.resources
 C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Debug\HiriKata.csproj.GenerateResource.Cache
+C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\HiriKata\bin\System.Net.Http.Formatting.dll
+C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\HiriKata\bin\System.Web.Http.dll
+C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\HiriKata\bin\System.Web.Http.Owin.dll
+C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\HiriKata\bin\System.Net.Http.Formatting.xml
+C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\HiriKata\bin\System.Web.Http.xml
+C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\HiriKata\bin\System.Web.Http.Owin.xml

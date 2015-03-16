@@ -6,7 +6,8 @@
         })
         .when('/register', {
             templateUrl: '../Account/Register',
-            controller: 'registerCtrl'
+            controller: 'registerCtrl',
+            controllerAs: 'regCtrl'
         })
     });
 })();
