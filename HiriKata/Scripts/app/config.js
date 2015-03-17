@@ -5,9 +5,14 @@
             controller: 'HomeCtrl'
         })
         .when('/register', {
-            templateUrl: '../Account/Register',
+            templateUrl: 'Scripts/app/pages/register.html',
             controller: 'registerCtrl',
             controllerAs: 'regCtrl'
+        })
+            .when('/login', {
+            templateUrl: 'Scripts/app/pages/login.html',
+            controller: 'LoginCtrl',
+            controllerAs: 'logCtrl'
         })
     });
 })();

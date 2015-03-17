@@ -14,8 +14,5 @@ namespace HiriKata.Models
         public string Category { get; set; }
     }
 
-    public class WordDbContext : DbContext
-    {
-        public DbSet<Word> Words { get; set; }
-    }
+  
 }

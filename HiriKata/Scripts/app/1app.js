@@ -1,3 +1,3 @@
 ﻿(function(){
-   angular.module("hirikata", ["ngRoute"]);
+    angular.module("hirikata", ["ngRoute"]);
 })();
