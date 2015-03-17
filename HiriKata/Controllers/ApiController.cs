@@ -17,25 +17,7 @@ namespace HiriKata.Controllers
         {
 
             return Json(db.GetWords(), JsonRequestBehavior.AllowGet);
-        
-            
-            }
-        public ActionResult Hello()
-        {
-            return Json("hello", JsonRequestBehavior.AllowGet);
-        }
-
-        [HttpPost]
-        [AllowAnonymous]
-        public ActionResult Register(Users obj)
-        {
-            if(!db.CheckUserName(obj.username)){
-                return new EmptyResult();
-            }
-            db.AddUser(new Users(obj.username, obj.password));
-            var newusr = db.FindUser(obj.username);             
-            return Json(newusr, JsonRequestBehavior.AllowGet);
-
         }
     }
+
 }

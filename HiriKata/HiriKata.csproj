@@ -195,6 +195,14 @@
     <Compile Include="Migrations\201503171928134_users.Designer.cs">
       <DependentUpon>201503171928134_users.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503172300183_updated-user-model.cs" />
+    <Compile Include="Migrations\201503172300183_updated-user-model.Designer.cs">
+      <DependentUpon>201503172300183_updated-user-model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503172304129_new-cat.cs" />
+    <Compile Include="Migrations\201503172304129_new-cat.Designer.cs">
+      <DependentUpon>201503172304129_new-cat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Models\Word.cs" />
@@ -266,6 +274,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503171928134_users.resx">
       <DependentUpon>201503171928134_users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503172300183_updated-user-model.resx">
+      <DependentUpon>201503172300183_updated-user-model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503172304129_new-cat.resx">
+      <DependentUpon>201503172304129_new-cat.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

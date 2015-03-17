@@ -12,8 +12,8 @@ namespace HiriKata.Models
         public int ID { get; set; }
         public string passwordhash { get; set; }
         public string username { get; set; }
-        public string password;
-        public string confirmpassword;
+        public DateTime CreatedAt { get; set; }
+        
 
 
         public static byte[] GetHash(string inputString)
@@ -33,15 +33,16 @@ namespace HiriKata.Models
 
         public bool checkPass(string attempt)
         {
-            return GetHashString(attempt) == passwordhash;
+            return GetHashString(attempt + "pepper" + this.CreatedAt.ToString()) == passwordhash;
         }
 
         public Users() { }
 
         public Users (string user, string pass)
         {
+            this.CreatedAt = DateTime.Now;
             this.username = user;
-            this.passwordhash = GetHashString(pass);
+            this.passwordhash = GetHashString(pass + "pepper" + CreatedAt.ToString() );
         }
     }
 }
