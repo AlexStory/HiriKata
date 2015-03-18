@@ -32,12 +32,12 @@ namespace HiriKata.Controllers
             Users obj = new Users(username, password);
             try
             {
-              Users  result = db.CheckLogin(username, password);
+              Dictionary<string, string>  result = db.CheckLogin(username, password);
               return Json(result, JsonRequestBehavior.AllowGet);
             }
             catch
             {
-                return new EmptyResult();
+                return Json("Error", JsonRequestBehavior.AllowGet);
             }
         }
 

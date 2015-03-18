@@ -49,7 +49,7 @@ namespace HiriKata.Repos
             return query.First<Users>();
         }
 
-        internal Users CheckLogin(string username, string password)
+        internal Dictionary<string, string> CheckLogin(string username, string password)
         {
             var query = from Users in _dbContext.Users
                         where Users.username == username
@@ -57,10 +57,26 @@ namespace HiriKata.Repos
             Users result = query.FirstOrDefault<Users>();
             if (result.checkPass(password))
             {
-                return result;
+                return GetUser(username);
             }
             else throw new ArgumentException();
+        }
+
+        public Dictionary<string, string> GetUser(string p)
+        {
+            var query = from Users in _dbContext.Users
+                        where Users.username == p
+                        select Users.username;
+            var query2 = from Users in _dbContext.Users
+                         where Users.username == p
+                         select Users.ID;
+
+
+            Dictionary<string, string> user = new Dictionary<string, string>();
+            user.Add("username", query.First<string>());
+            user.Add("ID", query2.First<int>().ToString());
             
+            return user;
         }
     }
 
