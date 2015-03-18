@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HiriKata.Models;
+using HiriKata.Repos;
+using System.Data.Entity;
 
 namespace TestHiri
 {
@@ -12,6 +14,14 @@ namespace TestHiri
         {
             var bob = new Users("Bob", "abc123");
             Assert.AreEqual(true, bob.checkPass("abc123"));
+        }
+
+        [TestMethod]
+        public void TestGetHirigana() {
+          var repo = new WordRepository();
+
+          var words = repo.GetWords();
+          Assert.AreEqual(words.Count, 48);
         }
     }
 }

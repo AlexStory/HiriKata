@@ -23,7 +23,7 @@ namespace HiriKata.Controllers
              }
             db.AddUser(obj);
             var newusr = db.FindUser(obj.username.ToString());
-            return Json(newusr, JsonRequestBehavior.AllowGet);
+            return Json(db.GetUser(newusr.username), JsonRequestBehavior.AllowGet);
             
         }
 

@@ -11,7 +11,7 @@
         })
             .when('/login', {
             templateUrl: 'Scripts/app/pages/login.html',
-            controller: 'LoginCtrl',
+            controller: 'loginCtrl',
             controllerAs: 'logCtrl'
         })
     });

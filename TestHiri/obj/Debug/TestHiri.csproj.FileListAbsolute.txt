@@ -37,3 +37,6 @@ C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\TestHiri\bin\D
 C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\TestHiri\obj\Debug\TestHiri.csprojResolveAssemblyReference.cache
 C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\TestHiri\obj\Debug\TestHiri.dll
 C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\TestHiri\obj\Debug\TestHiri.pdb
+C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\TestHiri\bin\Debug\TestHiri.dll.config
+C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\TestHiri\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\TestHiri\bin\Debug\EntityFramework.SqlServer.xml

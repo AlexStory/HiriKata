@@ -1,22 +1,27 @@
 ﻿(function () {
-    angular.module('hirikata').factory('accountFactory', function ($http) {
-        var _register = function (params, cb) {
-            $http.post('../api/account/register', params).success(function (data) {
-                _login(params, function (data) {
-                    cb(data);
-                })
+    angular.module('hirikata').factory('accountFactory', function ($http, $rootScope, $location) {
+        var _register = function (params) {
+            $http.get('../Register?username='+ params.username + "&password=" + params.password).success(function (data) {
+                $rootScope.user = data;
+            });
+       };
+     
+
+        var _login = function (params) {
+            $http.get('../Register/Login?username=' + params.username + "&password=" + params.password).success(function (data) {
+                $rootScope.user = data;
             });
         }
 
-        var _login = function (params, cb) {
-            $http.post('../api/account/login', params).success(function (data) {
-                cb(data)
-            });
+        var _logout = function () {
+            $rootScope.user = null;
+            $location.path("/");
         }
 
         return {
-            register: _register,
-            login: _login
+            register : _register,
+            login : _login,
+            logout : _logout
         }
     });
 })();

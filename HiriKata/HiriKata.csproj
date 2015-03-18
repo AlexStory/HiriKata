@@ -211,8 +211,9 @@
     <Compile Include="Repos\WordRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\default.css">
+      <DependentUpon>default.scss</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -227,13 +228,37 @@
     <Content Include="Scripts\app\1app.js" />
     <Content Include="Scripts\app\config.js" />
     <Content Include="Scripts\app\HomeController.js" />
+    <Content Include="Scripts\app\loginController.js" />
+    <Content Include="Scripts\app\navController.js" />
     <Content Include="Scripts\app\pages\home.html" />
+    <Content Include="Scripts\app\pages\login.html" />
     <Content Include="Scripts\app\pages\register.html" />
     <Content Include="Scripts\app\registerController.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-route.min.js.map" />
+    <Content Include="Content\default.scss" />
+    <Content Include="Content\zeppelin\.sass-cache\20c21ef8cea10f16de1b5128df7031255ad8502e\main.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\2709fd2b2988fb868e31bcfe335b87464dd2f278\main.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\2709fd2b2988fb868e31bcfe335b87464dd2f278\_zeppelin.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\a5b20d9234930a3bff173199d442f621eae55347\_variables.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\d1d92aee67ce97801434a7da25f90d5c779a6179\_mixins.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\d1d92aee67ce97801434a7da25f90d5c779a6179\_prefix.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\d1d92aee67ce97801434a7da25f90d5c779a6179\_styles.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\e424d7bda39a40da4a36d64553a07d90ac3ab98f\_variables.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\e424d7bda39a40da4a36d64553a07d90ac3ab98f\_variabless.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\effc3dfd3f0733f4bb2511dbd1be11b56823d2f7\main.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\effc3dfd3f0733f4bb2511dbd1be11b56823d2f7\_zeppelin.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\fe4fe2be720334412d885c7b5993a5c33769f418\_mixins.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\fe4fe2be720334412d885c7b5993a5c33769f418\_prefix.scssc" />
+    <Content Include="Content\zeppelin\.sass-cache\fe4fe2be720334412d885c7b5993a5c33769f418\_styles.scssc" />
+    <Content Include="Content\zeppelin\mixins\_mixins.scss" />
+    <Content Include="Content\zeppelin\mixins\_prefix.scss" />
+    <Content Include="Content\zeppelin\mixins\_styles.scss" />
+    <Content Include="Content\zeppelin\variables\_variables.scss" />
+    <Content Include="Content\zeppelin\_zeppelin.scss" />
+    <Content Include="Content\_login.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

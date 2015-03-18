@@ -5,19 +5,29 @@
         @Styles.Render("~/Content/css")
     </head>
     <body>
-        <div class="navbar navbar-default">
-            <div class="container container-fluid content">
-                <div class="navbar-header">
-                    <span class="navbar-brand">
+        <div class="nav">
+            <div class="main">
+                <a href="/#/">
+                    <span class="logo">
                         HiriKata
                     </span>
-
+                </a>
+                <div class="courses">
+                    <a href="/#/hirigana">Hirigana</a>
+                    <a href="/#/katakana">Katakana</a>
                 </div>
+                
 
+                    <div class="auth" ng-controller="navCtrl as nav">
+                        <a href="#/register" class="btn btn-toolbar" ng-hide="user"><button>Register</button></a>
+                        <a href="#/login" class="btn btn-toolbar" ng-hide="user"><button>Login</button></a>
+                        {{user.username}}
+                        <button ng-click="logout()" ng-show="user">Log Out</button>
+                    </div>
             </div>
 
         </div>
-        <div class="container container-fluid content">
+        <div class="content">
            <div ng-view>
 
            </div>
@@ -25,8 +35,6 @@
         </div>
     </body>
 @Scripts.Render("~/bundles/jquery")
-@Scripts.Render("~/bundles/jqueryval")
-@Scripts.Render("~/bundles/bootstrap")
 @Scripts.Render("~/bundles/angular")
 </html>
 

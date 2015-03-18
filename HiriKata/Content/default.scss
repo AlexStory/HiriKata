@@ -1,0 +1,52 @@
+﻿@import 'zeppelin/zeppelin';
+
+@include reset;
+
+body{
+    padding-top: 80px;
+}
+.auth {
+    display: inline-block;
+    float: right;
+    
+}
+
+button{
+        @include button(inverse);
+}
+
+.nav{
+    @include fixed-nav(shade);
+    @include clearfix;
+    @include vert-pad(5px);
+    span{
+        float: left;
+    }
+    a,
+    a:visited{
+        color: $off-black;
+    }
+}
+.logo {
+    &:after{
+        content: "|";
+    }
+}
+
+.courses{
+    display: inline-block;
+}
+
+.main{
+    @include container;
+}
+
+.content{
+    @include container;
+}
+
+input {
+    @include input;
+}
+
+@import '_login.scss';

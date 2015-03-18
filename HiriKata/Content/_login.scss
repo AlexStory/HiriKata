@@ -1,0 +1,8 @@
+﻿.login-page{
+    input{
+        @include vert-margin(10px);
+    }
+    button{
+        width: 220px;
+    }
+}

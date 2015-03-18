@@ -25,10 +25,11 @@ namespace HiriKata.Repos
                         where Users.username == username
                         select Users;
             Users result = query.FirstOrDefault<Users>();
-            return result == null;    
+            return result == null;  
         }
+        
 
-        public IEnumerable<Word> GetWords()
+        public List<Word> GetWords()
         {
             var query = from Word in _dbContext.Words
                         select Word;
