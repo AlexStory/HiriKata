@@ -1,0 +1,6 @@
+﻿.splash{
+    p{
+        @include span(8);
+        @include slide(2);
+    }
+}

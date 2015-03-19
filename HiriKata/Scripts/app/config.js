@@ -9,10 +9,16 @@
             controller: 'registerCtrl',
             controllerAs: 'regCtrl'
         })
-            .when('/login', {
+        .when('/login', {
             templateUrl: 'Scripts/app/pages/login.html',
             controller: 'loginCtrl',
             controllerAs: 'logCtrl'
         })
+        .when('/hirigana', {
+            templateUrl: 'Scripts/app/pages/hirigana.html',
+            controller: 'hiriganaCtrl',
+            controllerAs: 'hiri'
+        });
+
     });
 })();

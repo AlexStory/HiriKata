@@ -259,6 +259,9 @@
     <Content Include="Content\zeppelin\variables\_variables.scss" />
     <Content Include="Content\zeppelin\_zeppelin.scss" />
     <Content Include="Content\_login.scss" />
+    <Content Include="Content\_splash.scss" />
+    <Content Include="Content\zeppelin\_register.scss" />
+    <Content Include="Content\_register.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

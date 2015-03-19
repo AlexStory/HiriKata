@@ -69,7 +69,9 @@ button {
   content: "|"; }
 
 .courses {
-  display: inline-block; }
+  margin-left: 15px;
+  display: inline-block;
+  float: left; }
 
 .main {
   max-width: 960px;
@@ -81,7 +83,9 @@ button {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center; }
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px; }
 
 input {
   box-shadow: inset 0 0 2px #555;
@@ -97,10 +101,66 @@ input {
     box-shadow: 0 0 10px #3498db;
     outline: none; }
 
+.register-page label {
+  display: block; }
+.register-page form {
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 31.83333%;
+  margin-left: 33.83333%;
+  margin-right: 33.83333%; }
+.register-page input {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+.register-page button {
+  width: 220px; }
+
+.login-page label {
+  display: block; }
+.login-page form {
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 31.83333%;
+  margin-left: 33.83333%;
+  margin-right: 33.83333%; }
 .login-page input {
   margin-top: 10px;
   margin-bottom: 10px; }
 .login-page button {
   width: 220px; }
+
+.splash p {
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 65.16667%;
+  margin-left: 17.16667%; }
+
+.hirigana .board {
+  border-radius: 6px;
+  height: 400px;
+  background: #fdfdfd;
+  border: #222 2px solid;
+  margin-bottom: 5px; }
+.hirigana .left,
+.hirigana .right {
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 6.83333%;
+  height: 100px;
+  display: inline-block; }
+.hirigana .center {
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 81.83333%;
+  background: #fdfdfd;
+  border: #222 2px solid;
+  display: inline-block;
+  height: 100px; }
 
 /*# sourceMappingURL=default.css.map */
