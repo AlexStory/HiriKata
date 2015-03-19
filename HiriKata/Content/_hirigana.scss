@@ -1,5 +1,9 @@
 ﻿.hirigana {
 
+    div{
+        box-shadow: 2px,2px,2px,2px, 5px;
+    }
+
     .board {
         @include smooth;
         height: 400px;
@@ -11,8 +15,8 @@
     .left,
     .right {
         @include span(1);
-        height: 100px;
         display: inline-block;
+        vertical-align: top;        
     }
 
     .center {
@@ -21,6 +25,16 @@
         background: $off-white;
         border: $off-black 2px solid;
         display: inline-block;
-        height: 100px;
+        height: 120px;
+    }
+    .card{
+        @include side-margin(10px);
+        @include smooth;
+        display: inline-block;
+        height: 90px;
+        width:80px;
+        border: $off-black solid 2px;
+        margin-top: 15px;
+
     }
 }

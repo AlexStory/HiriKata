@@ -302,7 +302,7 @@
                    En = "YA",
                    Jp = "や",
                    Section = "Hirigana",
-                   Category = "Special"
+                   Category = "Spec"
                },
 
                new Word
@@ -310,7 +310,7 @@
                    En = "YU",
                    Jp = "ゆ",
                    Section = "Hirigana",
-                   Category = "Special"
+                   Category = "Spec"
                },
 
                new Word
@@ -318,7 +318,7 @@
                    En = "YO",
                    Jp = "よ",
                    Section = "Hirigana",
-                   Category = "Special"
+                   Category = "Spec"
                },
 
                new Word
@@ -366,7 +366,7 @@
                    En = "WA",
                    Jp = "わ",
                    Section = "Hirigana",
-                   Category = "Special"
+                   Category = "Spec"
                },
 
                new Word
@@ -374,7 +374,7 @@
                    En = "WO",
                    Jp = "を",
                    Section = "Hirigana",
-                   Category = "Special"
+                   Category = "Spec"
                },
 
                new Word
@@ -382,7 +382,7 @@
                    En = "WI",
                    Jp = "ゐ",
                    Section = "Hirigana",
-                   Category = "Special"
+                   Category = "Spec"
                },
 
                new Word
@@ -390,7 +390,7 @@
                    En = "WE",
                    Jp = "ゑ",
                    Section = "Hirigana",
-                   Category = "Special"
+                   Category = "Spec"
                },
 
                new Word
@@ -398,7 +398,7 @@
                    En = "N",
                    Jp = "ん",
                    Section = "Hirigana",
-                   Category = "Special"
+                   Category = "Spec"
                }
            );
         }

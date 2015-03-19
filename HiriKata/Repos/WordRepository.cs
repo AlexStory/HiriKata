@@ -79,6 +79,12 @@ namespace HiriKata.Repos
             
             return user;
         }
+
+        public List<string> GetCategories() {
+          var query = from Word in _dbContext.Words
+                      select Word.Category;
+          return query.Distinct<string>().ToList<string>();
+        }
     }
 
 

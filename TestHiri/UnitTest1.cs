@@ -23,5 +23,13 @@ namespace TestHiri
           var words = repo.GetWords();
           Assert.AreEqual(words.Count, 48);
         }
+
+        [TestMethod]
+        public void TestCategories() {
+          var repo = new WordRepository();
+
+          var words = repo.GetCategories();
+          Assert.AreEqual(words.Count, 5);
+        }
     }
 }

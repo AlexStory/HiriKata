@@ -2,9 +2,13 @@
     <div class="board">
     </div>
     <div class="bottom">
-        <section class="left"> </section>
-        <section class="center"> </section>
-        <section class="right"> </section>
+        <section class="left"><i class="fa fa-caret-square-o-left fa-5x"></i> </section>
+        <section class="center">
+            <div class="card" ng-repeat="character in characters">
+                <h3>{{character}}</h3>
+            </div> 
+        </section>
+        <section class="right"><i class="fa fa-caret-square-o-right fa-5x"></i> </section>
 
 
 </div>

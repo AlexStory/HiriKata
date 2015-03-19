@@ -67,3 +67,5 @@ C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\HiriKata\obj\D
 C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\HiriKata\obj\Debug\HiriKata.csprojResolveAssemblyReference.cache
 C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\HiriKata\obj\Debug\HiriKata.Migrations.updatedusermodel.resources
 C:\Users\astor_000\Documents\Visual Studio 2013\Projects\HiriKata\HiriKata\obj\Debug\HiriKata.Migrations.newcat.resources
+C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\bin\System.Web.Http.WebHost.dll
+C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\bin\System.Web.Http.WebHost.xml
