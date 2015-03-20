@@ -1,10 +1,10 @@
 ﻿<div class="hirigana">
-    <div class="board">
+    <div class="board" droppable>
     </div>
     <div class="bottom">
         <section class="left"><i class="fa fa-caret-square-o-left fa-5x"></i> </section>
         <section class="center">
-            <div class="card" ng-repeat="character in characters">
+            <div class="card" ng-repeat="character in characters" draggable id="{{character}}">
                 <h3>{{character}}</h3>
             </div> 
         </section>

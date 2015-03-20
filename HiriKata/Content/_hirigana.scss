@@ -1,11 +1,14 @@
 ﻿.hirigana {
 
-    div{
-        box-shadow: 2px,2px,2px,2px, 5px;
+    div {
+        box-shadow: 2px, 2px, 5px $off-black;
     }
 
     .board {
         @include smooth;
+        @include span(8);
+        @include slide(2);
+        @include slide(-2);
         height: 400px;
         background: $off-white;
         border: $off-black 2px solid;
@@ -30,6 +33,7 @@
     .card{
         @include side-margin(10px);
         @include smooth;
+        background: $off-white;
         display: inline-block;
         height: 90px;
         width:80px;
