@@ -399,6 +399,342 @@
                    Jp = "ん",
                    Section = "Hirigana",
                    Category = "Spec"
+               },
+
+               new Word {
+                 En = "A",
+                 Jp = "ア",
+                 Section = "Katakana",
+                 Category = "A-K"
+               },
+
+               new Word {
+                 En = "I",
+                 Jp = "ア",
+                 Section = "Katakana",
+                 Category = "A-K"
+               },
+
+                new Word {
+                  En = "U",
+                  Jp = "ウ",
+                  Section = "Katakana",
+                  Category = "A-K"
+                },
+
+                new Word {
+                  En = "E",
+                  Jp = "エ",
+                  Section = "Katakana",
+                  Category = "A-K"
+                },
+
+               new Word {
+                 En = "O",
+                 Jp = "オ",
+                 Section = "Katakana",
+                 Category = "A-K"
+               },
+
+               new Word {
+                 En = "KA",
+                 Jp = "カ",
+                 Section = "Katakana",
+                 Category = "A-K"
+               },
+
+               new Word {
+                 En = "KI",
+                 Jp = "キ",
+                 Section = "Katakana",
+                 Category = "A-K"
+               },
+
+               new Word {
+                 En = "KU",
+                 Jp = "ク",
+                 Section = "Katakana",
+                 Category = "A-K"
+               },
+
+               new Word {
+                 En = "KE",
+                 Jp = "ケ",
+                 Section = "Katakana",
+                 Category = "A-K"
+               },
+
+               new Word {
+                 En = "KO",
+                 Jp = "コ",
+                 Section = "Katakana",
+                 Category = "A-K"
+               },
+
+               new Word {
+                 En = "SA",
+                 Jp = "サ",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "SHI",
+                 Jp = "シ",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "SU",
+                 Jp = "ス",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "SE",
+                 Jp = "セ",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "SO",
+                 Jp = "ソ",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "TA",
+                 Jp = "タ",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "CHI",
+                 Jp = "チ",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "TSU",
+                 Jp = "ツ",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "TE",
+                 Jp = "テ",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "TO",
+                 Jp = "ト",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "NA",
+                 Jp = "ナ",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "NI",
+                 Jp = "ニ",
+                 Section = "Katakana",
+                 Category = "S-T"
+               },
+
+               new Word {
+                 En = "NU",
+                 Jp = "ヌ",
+                 Section = "Katakana",
+                 Category = "N-H"
+               },
+
+               new Word {
+                 En = "NE",
+                 Jp = "ネ",
+                 Section = "Katakana",
+                 Category = "N-H"
+               },
+
+               new Word {
+                 En = "NO",
+                 Jp = "ノ",
+                 Section = "Katakana",
+                 Category = "N-H"
+               },
+
+               new Word {
+                 En = "HA",
+                 Jp = "ハ",
+                 Section = "Katakana",
+                 Category = "N-H"
+               },
+
+               new Word {
+                 En = "HI",
+                 Jp = "ヒ",
+                 Section = "Katakana",
+                 Category = "N-H"
+               },
+
+               new Word {
+                 En = "FU",
+                 Jp = "フ",
+                 Section = "Katakana",
+                 Category = "N-H"
+               },
+
+               new Word {
+                 En = "HE",
+                 Jp = "ヘ",
+                 Section = "Katakana",
+                 Category = "N-H"
+               },
+
+               new Word {
+                 En = "HO",
+                 Jp = "ホ",
+                 Section = "Katakana",
+                 Category = "N-H"
+               },
+
+               new Word {
+                 En = "Ma",
+                 Jp = "マ",
+                 Section = "Katakana",
+                 Category = "M-R"
+               },
+
+               new Word {
+                 En = "MI",
+                 Jp = "ミ",
+                 Section = "Katakana",
+                 Category = "M-R"
+               },
+
+               new Word {
+                 En = "MU",
+                 Jp = "ム",
+                 Section = "Katakana",
+                 Category = "M-R"
+               },
+
+               new Word {
+                 En = "ME",
+                 Jp = "メ",
+                 Section = "Katakana",
+                 Category = "M-R"
+               },
+
+               new Word {
+                 En = "MO",
+                 Jp = "メ",
+                 Section = "Katakana",
+                 Category = "M-R"
+               },
+
+               new Word {
+                 En = "YA",
+                 Jp = "ヤ",
+                 Section = "Katakana",
+                 Category = "Spec"
+               },
+
+               new Word {
+                 En = "YU",
+                 Jp = "ユ",
+                 Section = "Katakana",
+                 Category = "Spec"
+               },
+
+               new Word {
+                 En = "YO",
+                 Jp = "ヨ",
+                 Section = "Katakana",
+                 Category = "Spec"
+               },
+
+               new Word {
+                 En = "RA",
+                 Jp = "ラ",
+                 Section = "Katakana",
+                 Category = "M-R"
+               },
+
+               new Word {
+                 En = "RI",
+                 Jp = "リ",
+                 Section = "Katakana",
+                 Category = "M-R"
+               },
+
+               new Word {
+                 En = "RU",
+                 Jp = "ル",
+                 Section = "Katakana",
+                 Category = "M-R"
+               },
+
+               new Word {
+                 En = "RE",
+                 Jp = "レ",
+                 Section = "Katakana",
+                 Category = "M-R"
+               },
+
+               new Word {
+                 En = "RO",
+                 Jp = "ロ",
+                 Section = "Katakana",
+                 Category = "M-R"
+               },
+
+               new Word {
+                 En = "WA",
+                 Jp = "ワ",
+                 Section = "Katakana",
+                 Category = "Spec"
+               },
+
+               new Word {
+                 En = "WO",
+                 Jp = "ヲ",
+                 Section = "Katakana",
+                 Category = "Spec"
+               },
+
+               new Word {
+                 En = "WI",
+                 Jp = "ウィ",
+                 Section = "Katakana",
+                 Category = "Spec"
+               },
+
+               new Word {
+                 En = "WE",
+                 Jp = "ウェ",
+                 Section = "Katakana",
+                 Category = "Spec"
+               },
+
+               new Word {
+                 En = "N",
+                 Jp = "ｎ",
+                 Section = "Katakana",
+                 Category = "Spec"
                }
            );
         }
