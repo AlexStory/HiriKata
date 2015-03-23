@@ -1,7 +1,7 @@
 ﻿.hirigana {
 
     div {
-        box-shadow: 2px, 2px, 5px $off-black;
+        box-shadow: 2px 2px 5px $off-black;
     }
 
     .board {
@@ -13,6 +13,7 @@
         background: $off-white;
         border: $off-black 2px solid;
         margin-bottom: 5px;
+        color: #808080;
     }
 
     .left,

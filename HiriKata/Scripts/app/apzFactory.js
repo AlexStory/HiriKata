@@ -6,8 +6,15 @@
             });
 
         }
+
+        var _post = function (url, params, cb) {
+            $http.post('../app/' + url, params).success(function (data) {
+                cb(data);
+            });
+        }
         return {
-            get: _get
+            get: _get,
+            post: _post
         }
     })
 })();

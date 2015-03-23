@@ -52,7 +52,12 @@ input {
     @include input;
 }
 
+table {
+    @include striped-table;
+}
+
 @import '_register.scss';
 @import '_login.scss';
 @import '_splash.scss';
 @import '_hirigana.scss';
+@import '_quiz.scss';

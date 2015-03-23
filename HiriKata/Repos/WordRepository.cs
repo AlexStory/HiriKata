@@ -85,6 +85,25 @@ namespace HiriKata.Repos
                       select Word.Category;
           return query.Distinct<string>().ToList<string>();
         }
+
+        public List<Word> GetByCategory(string id) {
+          var query = from Word in _dbContext.Words
+                      where Word.Category == id
+                      select Word;
+          return query.ToList<Word>();
+        }
+
+        internal void AddGame(Game game) {
+          _dbContext.Games.Add(game);
+          _dbContext.SaveChanges();
+        }
+
+        internal List<Game> GetUsersGames(int id) {
+          var query = from Game in _dbContext.Games
+                      where Game.UserID == id
+                      select Game;
+          return query.ToList<Game>();
+        }
     }
 
 

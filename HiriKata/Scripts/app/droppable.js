@@ -2,11 +2,6 @@
     angular.module('hirikata').directive('draggable', function ($location) {
         return function (scope, element) {
             var el = element[0];
-            console.log(el);
-            el.click(function () {
-                console.log('click');
-            });
-
             el.draggable = true;
 
             el.addEventListener(
@@ -75,10 +70,8 @@
                         if (e.stopPropagation) e.stopPropagation();
 
                         this.classList.remove('over');
-                        $location.path("hirigana/" + e.dataTransfer.getData('Text'));
-
-                        var item = document.getElementById(e.dataTransfer.getData('Text'));
-                        this.appendChild(item);
+                        var selected = e.dataTransfer.getData('Text')
+                        scope.$apply($location.path("/hirigana/" + selected ));
 
                         return false;
                     },

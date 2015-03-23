@@ -1,19 +1,11 @@
-﻿angular.module('hirikata').controller('hiriganaCtrl', function (apiFactory, $scope, $q) {
+﻿angular.module('hirikata').controller('hiriganaCtrl', function (apiFactory, $scope, $location) {
     $scope.characters = {};
 
+    $scope.goToRoute = function(params) {
+        $location.path('/hirigana/' + params);
+    }
+
     apiFactory.get('categories', function (data) {
-        defer.resolve(data);
-    });
-
-    var defer = $q.defer();
-    var cards = $('.cards');
-
-    defer.promise
-    .then(function (data) {
         $scope.characters = data;
-    })
-    .then(function () {
-        $('.card').draggable({ revert: true });
-        $('.board').droppable();
     });
 });

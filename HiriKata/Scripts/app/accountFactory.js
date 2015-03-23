@@ -3,6 +3,7 @@
         var _register = function (params) {
             $http.get('../Register?username='+ params.username + "&password=" + params.password).success(function (data) {
                 $rootScope.user = data;
+                $location.path("/");
             });
        };
      
@@ -10,6 +11,7 @@
         var _login = function (params) {
             $http.get('../Register/Login?username=' + params.username + "&password=" + params.password).success(function (data) {
                 $rootScope.user = data;
+                $location.path("/");
             });
         }
 

@@ -1,0 +1,30 @@
+﻿<div class="quiz">
+    <div class="board">
+        <div class="total">
+            <div class="cor">Correct: {{correct}}/{{len}}</div>
+            <div class="on">Progress: {{on}}/{{len}}</div>
+        </div>
+        <p class="current">{{current[0].Jp}}</p>
+        <div class="answers">
+            <div class="a">A) <button ng-click="sendAnswer(a)">{{a}}</button></div>
+            <div class="b">B) <button ng-click="sendAnswer(b)">{{b}}</button></div>
+            <div class="c">C) <button ng-click="sendAnswer(c)">{{c}}</button></div>
+            <div class="d">D) <button ng-click="sendAnswer(d)">{{d}}</button></div>
+        </div>
+        <div class="results">
+
+            <h2>
+                Results!
+            </h2>
+            <h4>
+                You got {{correct}} out of {{len}}!
+            </h4>
+            <h2>
+                Try Another?
+            </h2>
+            <a href="/#/hirigana"><button>HiriGana</button></a>
+            <a href="/#/katakana"><button>KataKana</button></a>
+        </div>
+        <button class="start">Begin</button>
+    </div>
+</div>

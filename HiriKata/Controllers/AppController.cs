@@ -23,5 +23,24 @@ namespace HiriKata.Controllers {
     public List<String> Categories() {
       return db.GetCategories();
     }
+
+    [Route("app/category/{id}")]
+    [HttpGet]
+    public List<Word> results(string id) {
+      return db.GetByCategory(id);
+    }
+
+    [Route("app/games")]
+    [HttpPost]
+    public HttpResponseMessage PostGame(Game game) {
+      db.AddGame(game);
+      return new HttpResponseMessage(HttpStatusCode.OK);
+    }
+
+    [Route("app/games/{id}")]
+    [HttpGet]
+    public List<Game> getGames(int id) {
+      return db.GetUsersGames(id);
+    }
   }
 }

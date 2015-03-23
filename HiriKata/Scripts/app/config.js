@@ -18,6 +18,14 @@
             templateUrl: 'Scripts/app/pages/hirigana.html',
             controller: 'hiriganaCtrl',
             controllerAs: 'hiri'
+        })
+        .when('/hirigana/:id', {
+            templateUrl: 'Scripts/app/pages/quiz.html',
+            controller: 'quizCtrl'
+        })
+        .when('/games', {
+            templateUrl: 'Scripts/app/pages/games.html',
+            controller: 'gamesCtrl'
         });
 
     });
