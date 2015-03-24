@@ -155,8 +155,6 @@ table {
   width: 65.16667%;
   margin-left: 17.16667%; }
 
-.hirigana div {
-  box-shadow: 2px 2px 5px #222; }
 .hirigana .board {
   border-radius: 6px;
   box-sizing: border-box;
@@ -198,6 +196,11 @@ table {
   width: 80px;
   border: #222 solid 2px;
   margin-top: 15px; }
+  .hirigana .card:hover {
+    margin-top: -10px;
+    box-shadow: 2px 2px 5px #222; }
+.hirigana .card:hover {
+  margin-top: 0; }
 
 .quiz .board {
   border-radius: 6px;

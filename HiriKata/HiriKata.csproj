@@ -212,8 +212,13 @@
     <Compile Include="Migrations\201503231921215_games.Designer.cs">
       <DependentUpon>201503231921215_games.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503242113124_perfectgames.cs" />
+    <Compile Include="Migrations\201503242113124_perfectgames.Designer.cs">
+      <DependentUpon>201503242113124_perfectgames.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\PerfectGame.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Models\Word.cs" />
     <Compile Include="Models\WordContext.cs" />
@@ -240,11 +245,13 @@
     <Content Include="Scripts\app\gameController.js" />
     <Content Include="Scripts\app\hiriganaController.js" />
     <Content Include="Scripts\app\HomeController.js" />
+    <Content Include="Scripts\app\katakana.js" />
     <Content Include="Scripts\app\loginController.js" />
     <Content Include="Scripts\app\navController.js" />
     <Content Include="Scripts\app\pages\games.html" />
     <Content Include="Scripts\app\pages\hirigana.html" />
     <Content Include="Scripts\app\pages\home.html" />
+    <Content Include="Scripts\app\pages\katakana.html" />
     <Content Include="Scripts\app\pages\login.html" />
     <Content Include="Scripts\app\pages\quiz.html" />
     <Content Include="Scripts\app\pages\register.html" />
@@ -330,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503231921215_games.resx">
       <DependentUpon>201503231921215_games.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503242113124_perfectgames.resx">
+      <DependentUpon>201503242113124_perfectgames.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

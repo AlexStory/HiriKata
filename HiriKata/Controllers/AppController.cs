@@ -24,10 +24,16 @@ namespace HiriKata.Controllers {
       return db.GetCategories();
     }
 
-    [Route("app/category/{id}")]
+    [Route("app/hirigana/{id}")]
     [HttpGet]
     public List<Word> results(string id) {
       return db.GetByCategory(id);
+    }
+
+    [Route("app/katakana/{id}")]
+    [HttpGet]
+    public List<Word> kata(string id) {
+      return db.GetKataByCategory(id);
     }
 
     [Route("app/games")]
@@ -39,8 +45,21 @@ namespace HiriKata.Controllers {
 
     [Route("app/games/{id}")]
     [HttpGet]
-    public List<Game> getGames(int id) {
+    public List<Game> GetGames(int id) {
       return db.GetUsersGames(id);
+    }
+
+    [Route("app/perfect/{id}")]
+    [HttpGet]
+    public List<PerfectGame> GetPerfect(int id) {
+      return db.GetPerfectGames(id);
+    }
+
+    [Route("app/perfect")]
+    [HttpPost]
+    public HttpResponseMessage AddPerfect(PerfectGame perfect) {
+       db.AddPerfectGame(perfect);
+       return new HttpResponseMessage(HttpStatusCode.Accepted);
     }
   }
 }

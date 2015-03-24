@@ -1,6 +1,6 @@
-﻿angular.module('hirikata').controller('hiriganaCtrl', function (apiFactory, $scope, $location, $rootScope) {
+﻿angular.module('hirikata').controller('katakanaCtrl', function (apiFactory, $scope, $location, $rootScope) {
     $scope.characters = {};
-    $rootScope.section = 'hirigana'
+    $rootScope.section = "katakana"
 
     $scope.goToRoute = function(params) {
         $location.path('/hirigana/' + params);

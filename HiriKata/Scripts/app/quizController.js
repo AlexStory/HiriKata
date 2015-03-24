@@ -7,7 +7,7 @@
         $scope.current = [];
         $scope.on = 0;
 
-        apiFactory.get('category/' + $routeParams.id, function (data) {
+        apiFactory.get($rootScope.section + '/' + $routeParams.id, function (data) {
             $scope.questions = data;
             $('.start').show();
             $scope.len = data.length;
@@ -25,25 +25,11 @@
         });
 
         $scope.sendAnswer = function (ans) {
-            if (ans == $scope.current[0].En) {
-                $scope.correct += 1;
-            }
+            ans == $scope.current[0].En ?  $scope.correct += 1: null;
             $scope.on++;
-            if ($scope.questions.length == 0) {
-                console.log($scope.current[0].Section)
-                var game = {
-                    Section: $scope.current[0].Section,
-                    Category: $routeParams.id,
-                    Correct: $scope.correct,
-                    Possible: $scope.len
-                }
-                if ($rootScope.user) {
-                    game.UserID = $rootScope.user.ID;
-                    apiFactory.post("games", game, function (data) {
-                        console.log(data);
-                    });
-                }
-                console.log(game);
+
+            if ($scope.questions.length == 0) {                
+                $rootScope.user ? createGame() : null;             
                 $('.results').show();
                 $('.total').hide();
                 $('.answers').hide();
@@ -51,7 +37,6 @@
             } else {
                 $scope.current = getQuestion();
                 getAnswers();
-                //$scope.$apply();
             }
         }
 
@@ -87,7 +72,29 @@
             }
         }
 
-        var getRandomSpot = function () {
+        var addPerfectGame = function(game) {
+            apiFactory.post('/perfect', game, function(data) {
+                console.log(data);   
+            });
+        }
+
+        var createGame = function(){
+            var game = {
+                Section: $scope.current[0].Section,
+                Category: $routeParams.id,
+                Correct: $scope.correct,
+                Possible: $scope.len,
+                UserID: $rootScope.user.ID
+            }
+
+            apiFactory.post("games", game, function (data) {
+                console.log(data);
+            });
+
+            game.Possible == game.Correct ? addPerfectGame(game): null;
+        }
+
+        var getRandomSpot = function() {
             var num = Math.floor(Math.random() * $scope.questions.length);
             return num;
         }

@@ -31,5 +31,11 @@ namespace TestHiri
           var words = repo.GetCategories();
           Assert.AreEqual(words.Count, 5);
         }
+
+        [TestMethod]
+        public void hiriiskata() {
+          Assert.AreEqual("ア", "あ");
+          
+        }
     }
 }

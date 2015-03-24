@@ -88,7 +88,8 @@ namespace HiriKata.Repos
 
         public List<Word> GetByCategory(string id) {
           var query = from Word in _dbContext.Words
-                      where Word.Category == id
+                      where Word.Category == id &&
+                            Word.Section == "Hirigana"
                       select Word;
           return query.ToList<Word>();
         }
@@ -103,6 +104,35 @@ namespace HiriKata.Repos
                       where Game.UserID == id
                       select Game;
           return query.ToList<Game>();
+        }
+
+        internal List<Word> GetKataByCategory(string id) {
+          var query = from Word in _dbContext.Words
+                      where Word.Category == id &&
+                            Word.Section == "Katakana"
+                      select Word;
+          return query.ToList<Word>();
+        }
+
+        internal List<PerfectGame> GetPerfectGames(int id) {
+          var query = from PerfectGame in _dbContext.PerfectGames
+                      where PerfectGame.UserID == id
+                      select PerfectGame;
+          return query.ToList<PerfectGame>();
+        }
+
+        internal void AddPerfectGame(PerfectGame perfect) {
+          var query = from PerfectGame in _dbContext.PerfectGames
+                      where PerfectGame.UserID == perfect.UserID &&
+                        PerfectGame.Section == perfect.Section &&
+                        PerfectGame.Category == perfect.Category
+                      select PerfectGame;
+          var result = query.FirstOrDefault<PerfectGame>();
+          if (result == null) {
+            _dbContext.PerfectGames.Add(perfect);
+              _dbContext.SaveChanges();
+          }
+
         }
     }
 

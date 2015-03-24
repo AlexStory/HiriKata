@@ -23,6 +23,14 @@
             templateUrl: 'Scripts/app/pages/quiz.html',
             controller: 'quizCtrl'
         })
+        .when('/katakana/:id', {
+            templateUrl: 'Scripts/app/pages/quiz.html',
+            controller: 'quizCtrl'
+        })
+        .when('/katakana', {
+            templateUrl: 'Scripts/app/pages/katakana.html',
+            controller: 'katakanaCtrl'
+        })
         .when('/games', {
             templateUrl: 'Scripts/app/pages/games.html',
             controller: 'gamesCtrl'

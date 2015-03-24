@@ -10,6 +10,7 @@ namespace HiriKata.Models
     {
         public DbSet<Word> Words { get; set; }
         public DbSet<Users> Users { get; set; }
-        public DbSet<Game> Games { get; set; } 
+        public DbSet<Game> Games { get; set; }
+        public DbSet<PerfectGame> PerfectGames { get; set; }
     }
 }

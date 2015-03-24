@@ -26,7 +26,7 @@
         }
     });
 
-    angular.module('hirikata').directive('droppable', function ($location) {
+    angular.module('hirikata').directive('droppable', function ($location, $rootScope) {
         return {
             scope: {},
             link: function (scope, element) {
@@ -71,7 +71,7 @@
 
                         this.classList.remove('over');
                         var selected = e.dataTransfer.getData('Text')
-                        scope.$apply($location.path("/hirigana/" + selected ));
+                        scope.$apply($location.path("/" + $rootScope.section + "/" + selected ));
 
                         return false;
                     },
