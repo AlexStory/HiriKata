@@ -219,6 +219,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\PerfectGame.cs" />
+    <Compile Include="Models\GameResult.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Models\Word.cs" />
     <Compile Include="Models\WordContext.cs" />
@@ -233,6 +234,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\bg.jpg" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
@@ -246,17 +248,20 @@
     <Content Include="Scripts\app\hiriganaController.js" />
     <Content Include="Scripts\app\HomeController.js" />
     <Content Include="Scripts\app\katakana.js" />
+    <Content Include="Scripts\app\learnController.js" />
     <Content Include="Scripts\app\loginController.js" />
     <Content Include="Scripts\app\navController.js" />
     <Content Include="Scripts\app\pages\games.html" />
     <Content Include="Scripts\app\pages\hirigana.html" />
     <Content Include="Scripts\app\pages\home.html" />
     <Content Include="Scripts\app\pages\katakana.html" />
+    <Content Include="Scripts\app\pages\learn.html" />
     <Content Include="Scripts\app\pages\login.html" />
     <Content Include="Scripts\app\pages\quiz.html" />
     <Content Include="Scripts\app\pages\register.html" />
     <Content Include="Scripts\app\quizController.js" />
     <Content Include="Scripts\app\registerController.js" />
+    <Content Include="Scripts\app\tableController.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
@@ -287,6 +292,8 @@
     <Content Include="Content\_register.scss" />
     <Content Include="Content\_hirigana.scss" />
     <Content Include="Content\_quiz.scss" />
+    <Content Include="Content\_learn.scss" />
+    <None Include="Properties\PublishProfiles\hirikata.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\app\droppable.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <DbDacFx path="C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Release\AutoScripts\DefaultConnection_IncrementalSchemaOnly.dacpac" dacpacAction="Deploy" />
+  <DbDacFx path="C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Release\AutoScripts\AuthContext_IncrementalSchemaOnly.dacpac" dacpacAction="Deploy" />
+  <IisApp path="C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Release\Package\PackageTmp" managedRuntimeVersion="v4.0" />
+  <setAcl path="C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\astor_000\documents\visual studio 2013\Projects\HiriKata\HiriKata\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

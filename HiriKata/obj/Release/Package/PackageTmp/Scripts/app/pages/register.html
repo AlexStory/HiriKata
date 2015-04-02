@@ -1,0 +1,24 @@
+﻿<div class="register-page">
+    <form>
+        <div>
+            <label for="username"><b>Username:</b></label>
+            <input ng-model="regCtrl.username" name="username" />
+        </div>
+        <div>
+            <label for="password"><b>Password:</b></label>
+
+            <input type="password" ng-model="regCtrl.password" name="password" />
+
+        </div>
+        <div>
+            <label for="password"><b>Confirm Password:</b></label>
+
+            <input type="password" ng-model="regCtrl.confirmpassword" name="password" />
+
+        </div>
+        <div>
+            <button ng-click="postForm()">Register</button>
+        </div>
+
+    </form>
+</div>

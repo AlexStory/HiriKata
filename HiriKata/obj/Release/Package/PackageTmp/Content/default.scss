@@ -1,0 +1,77 @@
+﻿@import 'zeppelin/zeppelin';
+
+@include reset;
+
+body {
+    padding-top: 80px;
+}
+
+h1 {
+    color: $green;
+}
+
+
+.auth {
+    display: inline-block;
+    float: right;
+}
+
+button {
+    @include button($off-white, $green , inverse);
+}
+
+.nav {
+    @include fixed-nav(shade);
+    @include clearfix;
+    @include vert-pad(5px);
+
+    span {
+        float: left;
+    }
+
+    a,
+    a:visited {
+        color: $off-black;
+    }
+}
+
+.logo {
+    &:after {
+        content: "|";
+    }
+}
+
+.courses {
+    margin-left: 15px;
+    display: inline-block;
+    float: left;
+}
+
+.main {
+    @include container;
+}
+
+.content {
+    @include container;
+    @include vert-pad(25px);
+}
+
+input {
+    @include input;
+}
+
+.games {
+
+    table {
+        @include striped-table;
+        @include span(8);
+        @include slide(2);
+    }
+}
+
+@import '_register.scss';
+@import '_login.scss';
+@import '_splash.scss';
+@import '_hirigana.scss';
+@import '_quiz.scss';
+@import '_learn.scss';

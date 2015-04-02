@@ -1,0 +1,48 @@
+﻿.hirigana {
+
+    .board {
+        @include smooth;
+        @include span(8);
+        @include slide(2);
+        @include slide(-2);
+        height: 400px;
+        background: $off-white;
+        border: $off-black 2px solid;
+        margin-bottom: 5px;
+        color: #808080;
+    }
+
+    .left,
+    .right {
+        @include span(1);
+        display: inline-block;
+        vertical-align: top;        
+    }
+
+    .center {
+        @include smooth;
+        @include span(10);
+        background: $off-white;
+        border: $off-black 2px solid;
+        display: inline-block;
+        height: 120px;
+    }
+    .card{
+        @include side-margin(10px);
+        @include smooth;
+        background: $off-white;
+        display: inline-block;
+        height: 90px;
+        width:80px;
+        border: $off-black solid 2px;
+        margin-top: 15px;
+       
+         &:hover {
+            margin-top: -10px;
+            box-shadow: 2px 2px 5px $off-black;
+        }
+    }
+    .card:hover {
+        margin-top: 0;
+    }
+}

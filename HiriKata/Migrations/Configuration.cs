@@ -760,7 +760,7 @@
           new Word {
             ID = 94,
             En = "WI",
-            Jp = "ウィ",
+            Jp = "ヰ",
             Section = "Katakana",
             Category = "Spec"
           },
@@ -768,7 +768,7 @@
           new Word {
             ID = 95,
             En = "WE",
-            Jp = "ウェ",
+            Jp = "ヱ",
             Section = "Katakana",
             Category = "Spec"
           },

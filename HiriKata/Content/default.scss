@@ -2,8 +2,12 @@
 
 @include reset;
 
-body{
+body {
     padding-top: 80px;
+}
+
+h1 {
+    color: $green;
 }
 
 
@@ -12,49 +16,60 @@ body{
     float: right;
 }
 
-button{
-        @include button(inverse);
+button {
+    @include button($off-white, $green , inverse);
 }
 
-.nav{
+.nav {
     @include fixed-nav(shade);
     @include clearfix;
     @include vert-pad(5px);
-    span{
+
+    span {
         float: left;
     }
+
     a,
-    a:visited{
+    a:visited {
         color: $off-black;
     }
+
+    color: $green;
 }
+
 .logo {
-    &:after{
+    &:after {
         content: "|";
     }
 }
 
-.courses{
+.courses {
     margin-left: 15px;
     display: inline-block;
-    float:  left;
+    float: left;
 }
 
-.main{
+.main {
     @include container;
 }
 
-.content{
+.content {
     @include container;
-    @include vert-pad(25px);   
+    @include vert-pad(25px);
+    box-shadow: 2px 2px 5px $off-black;
 }
 
 input {
     @include input;
 }
 
-table {
-    @include striped-table;
+.games {
+
+    table {
+        @include striped-table;
+        @include span(8);
+        @include slide(2);
+    }
 }
 
 @import '_register.scss';
@@ -62,3 +77,4 @@ table {
 @import '_splash.scss';
 @import '_hirigana.scss';
 @import '_quiz.scss';
+@import '_learn.scss';

@@ -1,0 +1,58 @@
+﻿.quiz {
+    .board{
+        @include smooth;
+        @include span(8);
+        @include slide(2);
+        @include slide(-2);
+        height: 400px;
+        background: $off-white;
+        border: $off-black 2px solid;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+    .start {
+        font-size: 2em;
+        @include button($green, $off-white, inverse);
+        margin-top: 20%;
+        display: none;
+    }
+
+    .total {
+        font-size: 1.5em;
+        font-style: oblique;
+    }
+
+    .current {
+        font-size: 3em;
+    }
+
+    .answers {
+        display: none;
+        @include span(8);
+        @include slide(2);
+        @include slide(-2);
+    }
+    
+    .a,
+    .b,
+    .c,
+    .d {
+        display: inline-block;
+        @include span(5);
+    }
+
+    .results {
+        display: none;
+        button {
+            @include button($green, $off-white, inverse);
+        }
+    }
+
+    .cor {
+        float: left;
+    }
+
+    .on {
+        float: right;
+    }
+}

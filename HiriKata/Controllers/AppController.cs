@@ -45,8 +45,8 @@ namespace HiriKata.Controllers {
 
     [Route("app/games/{id}")]
     [HttpGet]
-    public List<Game> GetGames(int id) {
-      return db.GetUsersGames(id);
+    public List<GameResult> GetGames(int id) {
+      return db.FindDistinct(id);
     }
 
     [Route("app/perfect/{id}")]

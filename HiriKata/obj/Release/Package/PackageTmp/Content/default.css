@@ -1,0 +1,295 @@
+button {
+  outline: none; }
+
+body {
+  background-color: #fdfdfd;
+  color: #222;
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 25px; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.75em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.25em; }
+
+h6 {
+  font-size: 1.125em; }
+
+body {
+  padding-top: 80px; }
+
+h1 {
+  color: #27ae60; }
+
+.auth {
+  display: inline-block;
+  float: right; }
+
+button {
+  background-color: #fdfdfd;
+  border: 1px solid #27ae60;
+  border-radius: 10px;
+  color: #27ae60;
+  padding: .5em 1em; }
+  button:hover {
+    background-color: #27ae60;
+    border-color: #fdfdfd;
+    color: #fdfdfd; }
+
+.nav {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  font-size: 1.25em;
+  font-weight: 700;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 10px #222;
+  color: #222;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .nav:after {
+    clear: both;
+    content: '';
+    display: table; }
+  .nav span {
+    float: left; }
+  .nav a,
+  .nav a:visited {
+    color: #222; }
+
+.logo:after {
+  content: "|"; }
+
+.courses {
+  margin-left: 15px;
+  display: inline-block;
+  float: left; }
+
+.main {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+.content {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+input {
+  box-shadow: inset 0 0 2px #555;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding-left: .5em;
+  background-color: #fdfdfd;
+  min-height: 37px;
+  padding-top: 1px;
+  padding-bottom: 1px; }
+  input:focus {
+    box-shadow: 0 0 10px #3498db;
+    outline: none; }
+
+.games table {
+  border-spacing: 0;
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 65.16667%;
+  margin-left: 17.16667%; }
+  .games table tbody td {
+    border-top: 1px solid #d4d4d4;
+    text-align: left; }
+  .games table tbody tr:nth-child(odd) {
+    background-color: #eee; }
+  .games table tbody tr:nth-child(even) {
+    background-color: #fdfdfd; }
+  .games table thead th {
+    background-color: #fdfdfd;
+    border-bottom: 2px #d4d4d4 solid;
+    text-align: left; }
+
+.register-page label {
+  display: block; }
+.register-page form {
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 31.83333%;
+  margin-left: 33.83333%;
+  margin-right: 33.83333%; }
+.register-page input {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+.register-page button {
+  width: 220px; }
+
+.login-page label {
+  display: block; }
+.login-page form {
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 31.83333%;
+  margin-left: 33.83333%;
+  margin-right: 33.83333%; }
+.login-page input {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+.login-page button {
+  width: 220px; }
+
+.splash p {
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 65.16667%;
+  margin-left: 17.16667%; }
+
+.hirigana .board {
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 65.16667%;
+  margin-left: 17.16667%;
+  margin-right: 17.16667%;
+  height: 400px;
+  background: #fdfdfd;
+  border: #222 2px solid;
+  margin-bottom: 5px;
+  color: #808080; }
+.hirigana .left,
+.hirigana .right {
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 6.83333%;
+  display: inline-block;
+  vertical-align: top; }
+.hirigana .center {
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 81.83333%;
+  background: #fdfdfd;
+  border: #222 2px solid;
+  display: inline-block;
+  height: 120px; }
+.hirigana .card {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  background: #fdfdfd;
+  display: inline-block;
+  height: 90px;
+  width: 80px;
+  border: #222 solid 2px;
+  margin-top: 15px; }
+  .hirigana .card:hover {
+    margin-top: -10px;
+    box-shadow: 2px 2px 5px #222; }
+.hirigana .card:hover {
+  margin-top: 0; }
+
+.quiz .board {
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 65.16667%;
+  margin-left: 17.16667%;
+  margin-right: 17.16667%;
+  height: 400px;
+  background: #fdfdfd;
+  border: #222 2px solid;
+  margin-bottom: 5px;
+  padding: 5px; }
+.quiz .start {
+  font-size: 2em;
+  background-color: #27ae60;
+  border: 1px solid #fdfdfd;
+  border-radius: 10px;
+  color: #fdfdfd;
+  padding: .5em 1em;
+  margin-top: 20%;
+  display: none; }
+  .quiz .start:hover {
+    background-color: #fdfdfd;
+    border-color: #27ae60;
+    color: #27ae60; }
+.quiz .total {
+  font-size: 1.5em;
+  font-style: oblique; }
+.quiz .current {
+  font-size: 3em; }
+.quiz .answers {
+  display: none;
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 65.16667%;
+  margin-left: 17.16667%;
+  margin-right: 17.16667%; }
+.quiz .a,
+.quiz .b,
+.quiz .c,
+.quiz .d {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 40.16667%; }
+.quiz .results {
+  display: none; }
+  .quiz .results button {
+    background-color: #27ae60;
+    border: 1px solid #fdfdfd;
+    border-radius: 10px;
+    color: #fdfdfd;
+    padding: .5em 1em; }
+    .quiz .results button:hover {
+      background-color: #fdfdfd;
+      border-color: #27ae60;
+      color: #27ae60; }
+.quiz .cor {
+  float: left; }
+.quiz .on {
+  float: right; }
+
+.learn h2 {
+  color: #27ae60; }
+.learn table {
+  border-spacing: 0;
+  display: inline-block; }
+  .learn table tbody td {
+    border-top: 1px solid #d4d4d4;
+    text-align: left; }
+  .learn table tbody tr:nth-child(odd) {
+    background-color: #eee; }
+  .learn table tbody tr:nth-child(even) {
+    background-color: #fdfdfd; }
+  .learn table thead th {
+    background-color: #fdfdfd;
+    border-bottom: 2px #d4d4d4 solid;
+    text-align: left; }
+
+/*# sourceMappingURL=default.css.map */

@@ -1,0 +1,9 @@
+﻿.learn {
+    h2 {
+        color: $green;
+    }
+    table {
+        @include striped-table;
+        display: inline-block;
+    }
+}

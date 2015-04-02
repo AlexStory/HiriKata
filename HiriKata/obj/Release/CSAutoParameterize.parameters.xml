@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\aspnet-HiriKata-20150313091049.mdf;Initial Catalog=aspnet-HiriKata-20150313091049;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\astor_000\\documents\\visual\ studio\ 2013\\Projects\\HiriKata\\HiriKata\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="AuthContext-Web.config Connection String" description="AuthContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=.\sqlexpress;Initial Catalog=AngularJSAuth;Integrated Security=SSPI;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\astor_000\\documents\\visual\ studio\ 2013\\Projects\\HiriKata\\HiriKata\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AuthContext']/@connectionString" />
+  </parameter>
+  <parameter name="HiriKata.Models.WordDbContext-Web.config Connection String" description="HiriKata.Models.WordDbContext Connection String used in web.config by the application to access the database." defaultValue="HiriKata.Models.WordDbContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\astor_000\\documents\\visual\ studio\ 2013\\Projects\\HiriKata\\HiriKata\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HiriKata.Models.WordDbContext']/@connectionString" />
+  </parameter>
+  <parameter name="HiriKata.Models.WordDbContext_DatabasePublish-Web.config Connection String" description="HiriKata.Models.WordDbContext_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="HiriKata.Models.WordDbContext_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\astor_000\\documents\\visual\ studio\ 2013\\Projects\\HiriKata\\HiriKata\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HiriKata.Models.WordDbContext_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>

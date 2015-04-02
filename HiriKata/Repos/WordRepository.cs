@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
+using Newtonsoft.Json.Linq;
 
 namespace HiriKata.Repos
 {
@@ -86,6 +87,12 @@ namespace HiriKata.Repos
           return query.Distinct<string>().ToList<string>();
         }
 
+        public List<string> GetSections() {
+          var query = from Word in _dbContext.Words
+                      select Word.Section;
+          return query.Distinct<string>().ToList<string>();
+        }
+
         public List<Word> GetByCategory(string id) {
           var query = from Word in _dbContext.Words
                       where Word.Category == id &&
@@ -133,7 +140,37 @@ namespace HiriKata.Repos
               _dbContext.SaveChanges();
           }
 
+
         }
+
+        public List<GameResult> FindDistinct(int id) {
+          var categories = GetCategories();
+          var sections = GetSections();
+          List<GameResult> results = new List<GameResult>();
+
+          foreach (string section in sections) {
+            foreach (string category in categories) {
+              var query = from game in _dbContext.Games
+                          where game.UserID == id &&
+                          game.Category == category &&
+                          game.Section == section
+                          select game;
+              var Q = query.ToList<Game>();
+              var temp = new GameResult();
+              temp.Games = Q.Count();
+              temp.Category = category;
+              temp.Section = section;
+              temp.PerfectGames = 0;
+              foreach (Game game in Q) {
+                if (game.Possible == game.Correct) { temp.PerfectGames++; }
+              }
+              results.Add(temp);
+            }
+          }
+
+          return results;
+
+        } 
     }
 
 
