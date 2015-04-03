@@ -12,5 +12,6 @@ namespace HiriKata.Models {
     public int Possible { get; set; }
     public string Section { get; set; }
     public string Category { get; set; }
+    
   }
 }
